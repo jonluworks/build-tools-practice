@@ -13,3 +13,6 @@ Webpack is set up to take *.styl files and transpile them to css while applying 
 ### Babel
 Allows us to write up to ES2017 and react JSX without having to worry about backwards browser support. Specific browsers can be targetted using the env
 preset options. All code will be transpiled down to ES5.
+
+## What's missing?
+All configuration is currently for development building. In order to be ready for production, sourcemaps should be disabled and the css should be stripped to its own file so that it can be cached and FOUC can be avoided.
