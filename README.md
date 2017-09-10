@@ -1,6 +1,9 @@
 # build-tools-practice
 A starter react project that uses webpack/babel that supports auto-prefixing and stylus css pre-processing.
-Built from an empty directory for practice
+Built from an empty directory for practice.
+
+It's probably best to just use Facebook's create-react-app utility since it has everything already set up, but it's good to
+dive into the build tools so that it's not just a black box.
 
 ## Tools
 
@@ -15,4 +18,4 @@ Allows us to write up to ES2017 and react JSX without having to worry about back
 preset options. All code will be transpiled down to ES5.
 
 ## What's missing?
-All configuration is currently for development building. In order to be ready for production, sourcemaps should be disabled and the css should be stripped to its own file so that it can be cached and FOUC can be avoided.
+All configuration is currently for development building. In order to be ready for production, sourcemaps should be disabled and the css should be stripped to its own file so that it can be cached and FOUC can be avoided. The best way to do this is probably to create some environmental production build flags.
